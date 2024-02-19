@@ -12,10 +12,12 @@ public class BFS {
             System.out.println(curr);
 
             List<String> neighbours = graph.get(curr); //graph.get(curr) -> is actually a list
+            q.addAll(neighbours);
 
-            for (String n : neighbours) {
-                q.add(n);
-            }
+            //Alternatively, you can also use loop to add neighbouring nodes
+//            for (String n : neighbours) {
+//                q.add(n);
+//            }
         }
     }
 
