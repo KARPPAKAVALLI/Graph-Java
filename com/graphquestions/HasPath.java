@@ -1,9 +1,8 @@
 package com.graphquestions;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+
+//All methods are static since, we are not creating & using any objects.
 
 public class HasPath {
     public static boolean dfs(int src,int dest,Map<Integer, List<Integer>> g, boolean visited[]){
